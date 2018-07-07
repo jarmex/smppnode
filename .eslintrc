@@ -1,0 +1,6 @@
+{
+  "extends": ["equimper"],
+  "rules": {
+    "space-before-function-paren": "off"
+  }
+}

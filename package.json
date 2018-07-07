@@ -1,0 +1,26 @@
+{
+  "name": "smsnode",
+  "version": "1.0.0",
+  "description": "SMPP client application",
+  "main": "./lib/index.js",
+  "repository": "https://github.com/jarmex/smppnode",
+  "author": "James Amo <jarmex@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && mkdir lib && babel -d ./lib ./ -s --copy-file --ignore node_modules,lib,README.md,babel.config.js",
+    "dev": "babel-node index.js"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.4.23"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-equimper": "^2.2.2",
+    "@babel/cli": "7.0.0-beta.51",
+    "@babel/core": "7.0.0-beta.51",
+    "@babel/preset-env": "7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.51",
+    "@babel/node":"7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties":"7.0.0-beta.51"
+  }
+}
