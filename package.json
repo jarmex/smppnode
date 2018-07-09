@@ -1,6 +1,6 @@
 {
   "name": "smsnode",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "SMPP client application",
   "main": "./lib/index.js",
   "repository": "https://github.com/jarmex/smppnode",
