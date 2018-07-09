@@ -30,7 +30,9 @@ class Session extends EventEmitter {
         transport = new TLSSocket();
       }
       // check to instantiate a new socket object
-
+      if (options.timeout) {
+        this.socket.socket.setTimeout(options.timeout);
+      }
       this.socket = transport.connect(this.options);
       this.socket.on('connect', () => {
         this.emit('connect');
@@ -48,6 +50,9 @@ class Session extends EventEmitter {
     });
     this.socket.on('error', (e) => {
       this.emit('error', e);
+    });
+    this.socket.on('timeout', () => {
+      this.emit('timeout', 'Socket timeout');
     });
   }
   connect() {
