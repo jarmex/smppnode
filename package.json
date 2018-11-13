@@ -11,16 +11,16 @@
     "dev": "babel-node index.js"
   },
   "dependencies": {
-    "iconv-lite": "^0.4.23"
+    "iconv-lite": "^0.4.24"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
     "eslint": "^4.19.1",
-    "eslint-config-equimper": "^2.2.2",
-    "@babel/cli": "7.0.0-beta.51",
-    "@babel/core": "7.0.0-beta.51",
-    "@babel/preset-env": "7.0.0-beta.51",
-    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.51",
-    "@babel/node":"7.0.0-beta.51",
-    "@babel/plugin-proposal-class-properties":"7.0.0-beta.51"
+    "eslint-config-equimper": "^2.2.2"
   }
 }

@@ -10,6 +10,7 @@ import {
   tlvs,
   tlvsById,
   commandsById,
+  types,
 } from './defs';
 import { PDU } from './pdu';
 
@@ -192,6 +193,7 @@ export const addTLV = (tag, options) => {
 export { Session };
 export { PDU };
 
+export { types };
 // for (const key of Object.keys(defs)) {
 //   exports[key] = defs[key];
 // }
